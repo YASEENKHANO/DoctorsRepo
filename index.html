@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bannu Doctors Directory</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+   <link rel="stylesheet" href="styles.css">
+   <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 Bannu Doctors Directory</h1>
+            <p>Find specialist doctors visiting from Peshawar • Stay informed about healthcare availability</p>
+        </div>
+
+        <div class="stats-cards">
+            <div class="stat-card">
+                <div class="stat-number" id="totalDoctors">0</div>
+                <div class="stat-label">Total Doctors</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="availableToday">0</div>
+                <div class="stat-label">Available Today</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="specialties">0</div>
+                <div class="stat-label">Specialties</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="clinics">0</div>
+                <div class="stat-label">Clinics</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Search doctors by name or specialty..." id="searchInput">
+            <select class="filter-select" id="specialtyFilter">
+                <option value="">All Specialties</option>
+            </select>
+            <select class="filter-select" id="availabilityFilter">
+                <option value="">All Availability</option>
+                <option value="available">Available Today</option>
+                <option value="unavailable">Not Available Today</option>
+            </select>
+           
+        </div>
+
+        <div class="charts-section">
+            <div class="chart-container">
+                <div class="chart-title">Doctors by Specialty</div>
+                <canvas id="specialtyChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-title">Weekly Availability</div>
+                <canvas id="availabilityChart"></canvas>
+            </div>
+        </div>
+
+        <div class="doctors-grid" id="doctorsGrid">
+            <!-- Doctors will be dynamically added here -->
+        </div>
+
+        <div class="no-results" id="noResults" style="display: none;">
+            <h3>🔍 No doctors found</h3>
+            <p>Try adjusting your search criteria or add a new doctor to the directory.</p>
+        </div>
+    </div>
+<div style="display: flex;align-items: center;justify-content: center;padding-bottom: 20px;">
+    <h4 style="color: white;">Created by Yaseen for the People Living in Bannu❤️</h4>
+</div>
+   
+ 
+</body>
+</html>
