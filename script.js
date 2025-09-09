@@ -7,7 +7,7 @@
                 clinic: "Bannu Heart Center",
                 timing: "Mon-Wed: 9:00 AM - 2:00 PM",
                 phone: "+92 300 1234567",
-                fees: 2000,
+               
                 isAvailable: true
             },
             {
@@ -16,7 +16,7 @@
                 clinic: "Children's Medical Center",
                 timing: "Tue-Thu: 10:00 AM - 3:00 PM",
                 phone: "+92 301 2345678",
-                fees: 1500,
+               
                 isAvailable: true
             },
             {
@@ -25,7 +25,7 @@
                 clinic: "Bannu Neuro Clinic",
                 timing: "Wed-Fri: 11:00 AM - 4:00 PM",
                 phone: "+92 302 3456789",
-                fees: 2500,
+               
                 isAvailable: false
             },
             {
@@ -34,7 +34,7 @@
                 clinic: "Women's Health Center",
                 timing: "Mon-Fri: 2:00 PM - 6:00 PM",
                 phone: "+92 303 4567890",
-                fees: 1800,
+             
                 isAvailable: true
             },
             {
@@ -43,7 +43,7 @@
                 clinic: "Bone & Joint Clinic",
                 timing: "Sat-Sun: 8:00 AM - 1:00 PM",
                 phone: "+92 304 5678901",
-                fees: 2200,
+                
                 isAvailable: false
             },
             {
@@ -52,7 +52,7 @@
                 clinic: "Skin Care Center",
                 timing: "Mon, Wed, Fri: 3:00 PM - 7:00 PM",
                 phone: "+92 305 6789012",
-                fees: 1600,
+                
                 isAvailable: true
             }
         ];
@@ -106,10 +106,7 @@
                             <span class="detail-icon">📞</span>
                             <span class="detail-text">${doctor.phone || 'Not provided'}</span>
                         </div>
-                        <div class="detail-row">
-                            <span class="detail-icon">💰</span>
-                            <span class="detail-text">PKR ${doctor.fees || 'Contact clinic'}</span>
-                        </div>
+                       
                     </div>
                     <div class="availability-badge ${doctor.isAvailable ? 'available' : 'unavailable'}">
                         ${doctor.isAvailable ? '✅ Available Today' : '❌ Not Available'}
@@ -252,7 +249,7 @@
                 clinic: document.getElementById('clinic').value,
                 timing: document.getElementById('timing').value,
                 phone: document.getElementById('phone').value,
-                fees: parseInt(document.getElementById('fees').value) || null,
+                
                 isAvailable: Math.random() > 0.3 // Random availability for demo
             };
 
@@ -278,3 +275,4 @@
 
         // Initialize the app when page loads
         document.addEventListener('DOMContentLoaded', init);
+
