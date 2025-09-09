@@ -7,6 +7,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
    <link rel="stylesheet" href="styles.css">
    <script src="script.js"></script>
+    <style>
+        footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #333; /* Example footer background color */
+  text-align: center;
+}
+
+.footer-container {
+  display: flex; /* Makes the main container a flex container */
+  flex-direction: column; /* Stacks the child elements vertically */
+  align-items: center; /* Centers items horizontally on the main axis */
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex; /* Arranges the images side by side */
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Provides space between the images */
+  padding-bottom: 20px;
+}
+
+.footer-content img {
+  width: 150px; /* Set a fixed width for the images */
+  height: 150px; /* Keep height and width the same for a square look */
+  border-radius: 50%; /* Optional: Makes the images circular */
+  object-fit: cover; /* Ensures the image fills the space without distortion */
+}
+    </style>
 </head>
 <body>
     <div class="container">
@@ -46,7 +76,7 @@
             </select>
            
         </div>
-
+<!---
         <div class="charts-section">
             <div class="chart-container">
                 <div class="chart-title">Doctors by Specialty</div>
@@ -57,7 +87,7 @@
                 <canvas id="availabilityChart"></canvas>
             </div>
         </div>
-
+--->
         <div class="doctors-grid" id="doctorsGrid">
             <!-- Doctors will be dynamically added here -->
         </div>
@@ -67,10 +97,23 @@
             <p>Try adjusting your search criteria or add a new doctor to the directory.</p>
         </div>
     </div>
-<div style="display: flex;align-items: center;justify-content: center;padding-bottom: 20px;">
-    <h4 style="color: white;">Created by Yaseen for the People Living in Bannu❤️</h4>
-</div>
+<footer>
+  <div class="footer-container">
+    <h4 style="color: white;">Developers</h4>
+    <div class="footer-content">
+      <div class="developer-profile">
+        <img src="https://raw.githubusercontent.com/YASEENKHANO/DoctorsRepo/refs/heads/main/fahad.PNG" alt="Developer 1">
+        <p>Shah Fahad</p>
+      </div>
+      <div class="developer-profile">
+        <img src="https://raw.githubusercontent.com/YASEENKHANO/DoctorsRepo/refs/heads/main/IMG_0254-(2).png" alt="Developer 2">
+        <p>Muh. Yaseen</p>
+      </div>
+    </div>
+  </div>
+</footer>
    
  
 </body>
+
 </html>
