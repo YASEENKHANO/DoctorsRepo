@@ -6,7 +6,6 @@
                 specialty: "Cardiology",
                 clinic: "Bannu Heart Center",
                 timing: "Mon-Wed: 9:00 AM - 2:00 PM",
-                phone: "+92 300 1234567",
                
                 isAvailable: true
             },
@@ -15,8 +14,7 @@
                 specialty: "Pediatrics",
                 clinic: "Children's Medical Center",
                 timing: "Tue-Thu: 10:00 AM - 3:00 PM",
-                phone: "+92 301 2345678",
-               
+                
                 isAvailable: true
             },
             {
@@ -24,8 +22,7 @@
                 specialty: "Neurology",
                 clinic: "Bannu Neuro Clinic",
                 timing: "Wed-Fri: 11:00 AM - 4:00 PM",
-                phone: "+92 302 3456789",
-               
+                
                 isAvailable: false
             },
             {
@@ -33,8 +30,7 @@
                 specialty: "Gynecology",
                 clinic: "Women's Health Center",
                 timing: "Mon-Fri: 2:00 PM - 6:00 PM",
-                phone: "+92 303 4567890",
-             
+               
                 isAvailable: true
             },
             {
@@ -42,8 +38,7 @@
                 specialty: "Orthopedics",
                 clinic: "Bone & Joint Clinic",
                 timing: "Sat-Sun: 8:00 AM - 1:00 PM",
-                phone: "+92 304 5678901",
-                
+                    
                 isAvailable: false
             },
             {
@@ -51,8 +46,7 @@
                 specialty: "Dermatology",
                 clinic: "Skin Care Center",
                 timing: "Mon, Wed, Fri: 3:00 PM - 7:00 PM",
-                phone: "+92 305 6789012",
-                
+                 
                 isAvailable: true
             }
         ];
@@ -102,10 +96,7 @@
                             <span class="detail-icon">🕒</span>
                             <span class="detail-text">${doctor.timing}</span>
                         </div>
-                        <div class="detail-row">
-                            <span class="detail-icon">📞</span>
-                            <span class="detail-text">${doctor.phone || 'Not provided'}</span>
-                        </div>
+                      
                        
                     </div>
                     <div class="availability-badge ${doctor.isAvailable ? 'available' : 'unavailable'}">
@@ -248,8 +239,6 @@
                 specialty: document.getElementById('specialty').value,
                 clinic: document.getElementById('clinic').value,
                 timing: document.getElementById('timing').value,
-                phone: document.getElementById('phone').value,
-                
                 isAvailable: Math.random() > 0.3 // Random availability for demo
             };
 
@@ -275,4 +264,5 @@
 
         // Initialize the app when page loads
         document.addEventListener('DOMContentLoaded', init);
+
 
