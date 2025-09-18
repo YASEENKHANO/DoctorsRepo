@@ -2,49 +2,73 @@
         // Sample data - in a real app, this would come from a database
         let doctors = [
             {
-                name: "Dr. Muhammad Tariq",
-                specialty: "Cardiology",
-                clinic: "Bannu Heart Center",
+                name: "Dr. Qazi Rafi uddin",
+                specialty: "Urologist",
+                clinic: "DHQ",
                 timing: "Mon-Wed: 9:00 AM - 2:00 PM",
                
                 isAvailable: true
             },
             {
-                name: "Dr. Fatima Shah",
-                specialty: "Pediatrics",
-                clinic: "Children's Medical Center",
+                name: "Dr. Anwar kamal",
+                specialty: "Medical Specialist",
+                clinic: "DHQ",
                 timing: "Tue-Thu: 10:00 AM - 3:00 PM",
                 
                 isAvailable: true
             },
             {
-                name: "Dr. Ahmad Khan",
-                specialty: "Neurology",
-                clinic: "Bannu Neuro Clinic",
+                name: "Dr. Raza Muhammad",
+                specialty: "Medical Specialist",
+                clinic: "DHQ",
                 timing: "Wed-Fri: 11:00 AM - 4:00 PM",
                 
                 isAvailable: false
             },
             {
-                name: "Dr. Ayesha Malik",
-                specialty: "Gynecology",
-                clinic: "Women's Health Center",
+                name: "Dr. Abid Usman",
+                specialty: "psychiatry",
+                clinic: "DHQ",
                 timing: "Mon-Fri: 2:00 PM - 6:00 PM",
                
                 isAvailable: true
             },
             {
-                name: "Dr. Hassan Ali",
-                specialty: "Orthopedics",
-                clinic: "Bone & Joint Clinic",
+                name: "Dr. Ubaid Rehman",
+                specialty: "Medical Specialist",
+                clinic: "DHQ",
                 timing: "Sat-Sun: 8:00 AM - 1:00 PM",
                     
                 isAvailable: false
             },
             {
-                name: "Dr. Zainab Khattak",
-                specialty: "Dermatology",
-                clinic: "Skin Care Center",
+                name: "Dr. Ikram",
+                specialty: "Orthopedic",
+                clinic: "DHQ",
+                timing: "Mon, Wed, Fri: 3:00 PM - 7:00 PM",
+                 
+                isAvailable: true
+            },
+            {
+                name: "Dr. Nusrat Ullah",
+                specialty: "Neurologist",
+                clinic: "DHQ",
+                timing: "Mon, Wed, Fri: 3:00 PM - 7:00 PM",
+                 
+                isAvailable: true
+            },
+            {
+                name: "Dr. Junaid Alam",
+                specialty: "Neurologist",
+                clinic: "DHQ",
+                timing: "Mon, Wed, Fri: 3:00 PM - 7:00 PM",
+                 
+                isAvailable: true
+            },
+            {
+                name: "Dr. Rifat Ullah",
+                specialty: "Medical Specialist (Chest)",
+                clinic: "DHQ",
                 timing: "Mon, Wed, Fri: 3:00 PM - 7:00 PM",
                  
                 isAvailable: true
@@ -264,5 +288,6 @@
 
         // Initialize the app when page loads
         document.addEventListener('DOMContentLoaded', init);
+
 
 
